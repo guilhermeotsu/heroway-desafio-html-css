@@ -1,0 +1,16 @@
+.header-main { 
+    background-color:rgb(44, 62, 80);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.header-main .title, .header-main .nav-top {
+    display: inline;
+}
+
+.header-main a {
+    color: white;
+}
