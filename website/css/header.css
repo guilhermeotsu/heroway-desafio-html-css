@@ -3,8 +3,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px 10%;
+    text-transform: uppercase;
+    color:white;
+    font-family:'Varela Round';
 }
 
 .header-main .title, .header-main .nav-top {
@@ -13,4 +16,10 @@
 
 .header-main a {
     color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+a:hover {
+    font-size: 20px;
 }
