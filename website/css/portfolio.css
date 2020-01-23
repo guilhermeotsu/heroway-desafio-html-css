@@ -19,3 +19,19 @@
     max-width: 100%;
     display: block;
 }
+
+.container {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
+
+.far.fa-star {
+    color: black;
+}
