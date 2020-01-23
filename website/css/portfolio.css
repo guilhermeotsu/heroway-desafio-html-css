@@ -1,3 +1,29 @@
+/* Título do portfolio */
+.portfolio-title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.portfolio-title > .container {
+    padding: 20px;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-title > .container > .bar {
+    margin: 5px;
+    width: 40px;
+    height: 2px;
+    background-color: black;
+}
+
+.portfolio-title > .container > .far.fa-star {
+    color: black;
+}
+
+
+/* imagens do portfolio */
 .portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -10,28 +36,7 @@
     margin: 7px;
 }
 
-.portfolio > h1 {
-    color: black;
-    text-transform: uppercase;
-}
-
 .portfolio > div > img {
     max-width: 100%;
     display: block;
-}
-
-.container {
-    display:  flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bar {
-    width: 30px;
-    height: 2px;
-    background-color: black;
-}
-
-.far.fa-star {
-    color: black;
 }
