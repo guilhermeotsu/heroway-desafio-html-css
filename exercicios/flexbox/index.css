@@ -1,0 +1,102 @@
+body, ul, li, p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+body {
+    margin-bottom: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+img {
+    max-width: 100%; /* imagens responsivas */
+    display: block;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* deixa o logo e nav nas extremidades */
+    padding: 20px;
+    align-items: center; /* alinha a logo com o menu */
+    flex-wrap: wrap; /* faz a quebra de linha */ 
+    background-color: #1d1e20;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a { 
+    display: block;
+    padding: 10px;
+}
+
+/* CSS FLEXBOX */ 
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto; /* caso passe dos 800px alinha no centro */
+}
+
+.flex > div {
+    flex: 1 1 200px; /* no mínimo 200px de largura */
+    margin: 10px;
+}
+
+/* CSS GRID 1 */ 
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* fr divide 100% em partes iguais, no caso 33 aproximado */
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    grid-gap: 20px; /* faz o espaçamento entre os itens*/
+}
+
+.grid1 > div:nth-child(n + 4) { /* seletor de filhos do elemento. (n + 5) a partir do 5° item */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.grid1 > div.anuncio {
+    grid-column: 1; /* qual coluna ele deve estar */
+    grid-row: 2/5; /* posiciona o anuncio entre as linha 2 e 5 */
+    border-top: 10px solid tomato;
+    display: block;
+}
+ 
+@media (max-width: 600px) { /* tudo que for abaixo de 600px */
+    .grid1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid1 > div:nth-child(n + 4) { 
+        display: block;
+    }
+
+    .grid1 > div.anuncio {
+        grid-column: auto;
+        grid-row: auto;
+    }
+}
