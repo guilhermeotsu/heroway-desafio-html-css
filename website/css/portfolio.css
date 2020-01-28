@@ -2,6 +2,7 @@
 .portfolio-title {
     text-transform: uppercase;
     text-align: center;
+    padding-top: 50px;
 }
 
 .portfolio-title > .container {
@@ -29,14 +30,17 @@
     flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto; 
+
 }
 
 .portfolio > div {
     flex: 1 1 200px;
-    margin: 7px;
+    margin: 13px;
 }
 
 .portfolio > div > img {
     max-width: 100%;
     display: block;
+    width:250px;
+    border-radius: 10px;
 }

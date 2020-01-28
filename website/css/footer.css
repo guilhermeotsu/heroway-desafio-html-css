@@ -1,0 +1,11 @@
+.footer {
+    display: flex;
+    background-color: darkblue;
+}
+
+/* , faz com que a mesmo css */ 
+.location, .around-web, .about-freelancer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
